@@ -67,5 +67,7 @@ module cla64_flat(
   // Step 3: sum bits
   // ---------------------------------------------------------------------
   // TODO: assign #(2) sum = p ^ {c[63:1], cin};
+assign #(2) cout = c[64];
+assign #(2) sum = p ^ {c[63:1], cin};
 
 endmodule
