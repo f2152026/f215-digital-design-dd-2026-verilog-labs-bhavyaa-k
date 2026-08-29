@@ -43,7 +43,7 @@ module rca64(
     end
   endgenerate
 
-  assign cout = c[64];
+  assign #(2) cout = c[64];
 
   
 endmodule
